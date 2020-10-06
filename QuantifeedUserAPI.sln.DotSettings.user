@@ -1,0 +1,12 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=011dfba2_002D694b_002D4329_002D9c78_002Daff45dc8228c/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="PostUserSucceedsWithHttpResponseMessage201Created #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;ProjectFile&gt;A0BA20CD-CF63-4EDD-8E6A-AC824352DD6A/f:UserControllerTests.cs&lt;/ProjectFile&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=a7e5fb35_002Dd927_002D418a_002Da847_002D977b759bd846/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="PostUserSucceedsWithHttpResponseMessage201Created" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;MSTest::A0BA20CD-CF63-4EDD-8E6A-AC824352DD6A::.NETCoreApp,Version=v3.1::QuantifeedUserAPI.Tests.UserControllerTests.PostUserSucceedsWithHttpResponseMessage201Created&lt;/TestId&gt;
+    &lt;TestId&gt;MSTest::A0BA20CD-CF63-4EDD-8E6A-AC824352DD6A::.NETCoreApp,Version=v3.1::QuantifeedUserAPI.Tests.UserControllerTests.PutUserSucceedsWithHttpResponseMessage200Ok&lt;/TestId&gt;
+    &lt;TestId&gt;MSTest::A0BA20CD-CF63-4EDD-8E6A-AC824352DD6A::.NETCoreApp,Version=v3.1::QuantifeedUserAPI.Tests.UserControllerTests.GetUsersSucceedsWithHttpResponseMessage200&lt;/TestId&gt;
+    &lt;TestId&gt;MSTest::A0BA20CD-CF63-4EDD-8E6A-AC824352DD6A::.NETCoreApp,Version=v3.1::QuantifeedUserAPI.Tests.UserControllerTests.DeleteUserSucceedsWithHttpResponseMessage200&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

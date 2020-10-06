@@ -1,0 +1,342 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>QuantifeedUserAPI</name>
+    </assembly>
+    <members>
+        <member name="T:QuantifeedUserAPI.Controllers.ClientsController">
+            <summary>
+            Clients Controller
+            </summary>
+        </member>
+        <member name="F:QuantifeedUserAPI.Controllers.ClientsController._logger">
+            <summary>
+            logger object
+            </summary>
+        </member>
+        <member name="F:QuantifeedUserAPI.Controllers.ClientsController._service">
+            <summary>
+            client service
+            </summary>
+        </member>
+        <member name="M:QuantifeedUserAPI.Controllers.ClientsController.#ctor(Microsoft.Extensions.Logging.ILogger{QuantifeedUserAPI.Controllers.ClientsController},QuantifeedUserAPI.Interfaces.IClientService)">
+            <summary>
+             Constructor Managers Controller
+            </summary>
+            <param name="logger">logger to log the details</param>
+            <param name="service"></param>
+        </member>
+        <member name="M:QuantifeedUserAPI.Controllers.ClientsController.Clients">
+            <summary>
+            API to get all the Clients
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:QuantifeedUserAPI.Controllers.ClientsController.Clients(System.String)">
+            <summary>
+            API to get all the Clients with a specified Manager
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:QuantifeedUserAPI.Controllers.ManagersController">
+            <summary>
+            Manager Controller
+            </summary>
+        </member>
+        <member name="F:QuantifeedUserAPI.Controllers.ManagersController._logger">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:QuantifeedUserAPI.Controllers.ManagersController._service">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:QuantifeedUserAPI.Controllers.ManagersController.#ctor(Microsoft.Extensions.Logging.ILogger{QuantifeedUserAPI.Controllers.ManagersController},QuantifeedUserAPI.Interfaces.IManagerService)">
+            <summary>
+             Constructor Managers Controller
+            </summary>
+            <param name="logger">logger to log the details</param>
+            <param name="service"></param>
+        </member>
+        <member name="M:QuantifeedUserAPI.Controllers.ManagersController.Managers">
+            <summary>
+            API to get all the Managers
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:QuantifeedUserAPI.Controllers.UsersController">
+            <summary>
+            A Controller for the Users
+            </summary>
+        </member>
+        <member name="M:QuantifeedUserAPI.Controllers.UsersController.#ctor(Microsoft.Extensions.Logging.ILogger{QuantifeedUserAPI.Controllers.UsersController},QuantifeedUserAPI.Interfaces.IUserService)">
+            <summary>
+             Constructor Users Controller
+            </summary>
+            <param name="logger">logger to log the details</param>
+            <param name="service"></param>
+        </member>
+        <member name="M:QuantifeedUserAPI.Controllers.UsersController.Users">
+            <summary>
+            API to get all the Users
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:QuantifeedUserAPI.Controllers.UsersController.User(QuantifeedUserAPI.Models.User)">
+            <summary>
+            API to Insert/Post New User in the System
+            </summary>
+            <param name="user"></param>
+            <returns></returns>
+        </member>
+        <member name="M:QuantifeedUserAPI.Controllers.UsersController.User(System.Int32,QuantifeedUserAPI.Models.User)">
+            <summary>
+            API to update User for the given ID
+            </summary>
+            <param name="id"></param>
+            <param name="user"></param>
+            <returns></returns>
+        </member>
+        <member name="M:QuantifeedUserAPI.Controllers.UsersController.User(System.Int32)">
+            <summary>
+            API to delete the User from the system
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:QuantifeedUserAPI.Interfaces.IClientService">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:QuantifeedUserAPI.Interfaces.IClientService.GetClients">
+            <summary>
+            get all clients
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:QuantifeedUserAPI.Interfaces.IClientService.GetClients(System.String)">
+            <summary>
+            For a specified Manager username, retrieve a list of its clients
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:QuantifeedUserAPI.Interfaces.IManagerService">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:QuantifeedUserAPI.Interfaces.IManagerService.GetManagers">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:QuantifeedUserAPI.Interfaces.IUserService">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:QuantifeedUserAPI.Interfaces.IUserService.GetUsers">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:QuantifeedUserAPI.Interfaces.IUserService.AddUser(QuantifeedUserAPI.Models.User)">
+            <summary>
+            
+            </summary>
+            <param name="user"></param>
+            <returns></returns>
+        </member>
+        <member name="M:QuantifeedUserAPI.Interfaces.IUserService.UpdateUser(QuantifeedUserAPI.Models.User)">
+            <summary>
+            
+            </summary>
+            <param name="user"></param>
+            <returns></returns>
+        </member>
+        <member name="M:QuantifeedUserAPI.Interfaces.IUserService.DeleteUser(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:QuantifeedUserAPI.Models.Client">
+            <summary>
+            Clients
+            </summary>
+        </member>
+        <member name="P:QuantifeedUserAPI.Models.Client.ClientId">
+            <summary>
+            Client Id
+            </summary>
+        </member>
+        <member name="P:QuantifeedUserAPI.Models.Client.Level">
+            <summary>
+            Level
+            </summary>
+        </member>
+        <member name="P:QuantifeedUserAPI.Models.Client.UserId">
+            <summary>
+            Usr Id : FK
+            </summary>
+        </member>
+        <member name="P:QuantifeedUserAPI.Models.Client.ManagerId">
+            <summary>
+            Manager of the Client
+            </summary>
+        </member>
+        <member name="P:QuantifeedUserAPI.Models.Client.Manager">
+            <summary>
+            Navigational Property
+            </summary>
+        </member>
+        <member name="T:QuantifeedUserAPI.Models.Manager">
+            <summary>
+            Manager
+            </summary>
+        </member>
+        <member name="P:QuantifeedUserAPI.Models.Manager.ManagerId">
+            <summary>
+            Manager Id
+            </summary>
+        </member>
+        <member name="P:QuantifeedUserAPI.Models.Manager.Position">
+            <summary>
+            Position : Junior / Senior
+            </summary>
+        </member>
+        <member name="P:QuantifeedUserAPI.Models.Manager.UserId">
+            <summary>
+            User Id : FK
+            </summary>
+        </member>
+        <member name="P:QuantifeedUserAPI.Models.Manager.Clients">
+            <summary>
+            Manager has List of Clients
+            </summary>
+        </member>
+        <member name="T:QuantifeedUserAPI.Models.Position">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:QuantifeedUserAPI.Models.Position.Junior">
+            <summary>
+            Junior Position
+            </summary>
+        </member>
+        <member name="F:QuantifeedUserAPI.Models.Position.Senior">
+            <summary>
+            Senior Position
+            </summary>
+        </member>
+        <member name="T:QuantifeedUserAPI.Models.User">
+            <summary>
+            User Model for the Quantifeed System
+            </summary>
+        </member>
+        <member name="P:QuantifeedUserAPI.Models.User.UserId">
+            <summary>
+            User Id
+            </summary>
+        </member>
+        <member name="P:QuantifeedUserAPI.Models.User.UserName">
+            <summary>
+            User Name
+            </summary>
+        </member>
+        <member name="P:QuantifeedUserAPI.Models.User.Email">
+            <summary>
+            Email
+            </summary>
+        </member>
+        <member name="P:QuantifeedUserAPI.Models.User.Alias">
+            <summary>
+            Alias
+            </summary>
+        </member>
+        <member name="P:QuantifeedUserAPI.Models.User.FirstName">
+            <summary>
+            First Name
+            </summary>
+        </member>
+        <member name="P:QuantifeedUserAPI.Models.User.LastName">
+            <summary>
+            Last Name
+            </summary>
+        </member>
+        <member name="T:QuantifeedUserAPI.Services.ClientService">
+            <summary>
+            Client Service
+            </summary>
+        </member>
+        <member name="M:QuantifeedUserAPI.Services.ClientService.#ctor(QuantifeedUserAPI.Context.QuantifeedDBContext)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="_db"></param>
+        </member>
+        <member name="M:QuantifeedUserAPI.Services.ClientService.GetClients">
+            <summary>
+            get Clients
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:QuantifeedUserAPI.Services.ClientService.GetClients(System.String)">
+            <summary>
+            For a specified Manager username, retrieve a list of its clients
+            </summary>
+            <param name="managerName"></param>
+            <returns></returns>
+        </member>
+        <member name="T:QuantifeedUserAPI.Services.ManagerService">
+            <summary>
+            Manager Service
+            </summary>
+        </member>
+        <member name="M:QuantifeedUserAPI.Services.ManagerService.#ctor(QuantifeedUserAPI.Context.QuantifeedDBContext)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="_db"></param>
+        </member>
+        <member name="M:QuantifeedUserAPI.Services.ManagerService.GetManagers">
+            <summary>
+            get Managers
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:QuantifeedUserAPI.Services.UserService">
+            <summary>
+            User Service
+            </summary>
+        </member>
+        <member name="M:QuantifeedUserAPI.Services.UserService.GetUsers">
+            <summary>
+            get users
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:QuantifeedUserAPI.Services.UserService.AddUser(QuantifeedUserAPI.Models.User)">
+            <summary>
+            Add Users
+            </summary>
+            <param name="user">User</param>
+            <returns></returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:QuantifeedUserAPI.Services.UserService.UpdateUser(QuantifeedUserAPI.Models.User)" -->
+        <member name="M:QuantifeedUserAPI.Services.UserService.DeleteUser(System.Int32)">
+            <summary>
+            Delete User
+            </summary>
+            <param name="id">id of the User to delete</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

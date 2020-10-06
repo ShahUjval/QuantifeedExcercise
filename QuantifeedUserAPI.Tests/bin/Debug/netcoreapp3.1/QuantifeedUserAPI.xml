@@ -1,0 +1,141 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>QuantifeedUserAPI</name>
+    </assembly>
+    <members>
+        <member name="T:QuantifeedUserAPI.Controllers.UsersController">
+            <summary>
+            A Controller for the Users
+            </summary>
+        </member>
+        <member name="M:QuantifeedUserAPI.Controllers.UsersController.#ctor(Microsoft.Extensions.Logging.ILogger{QuantifeedUserAPI.Controllers.UsersController},QuantifeedUserAPI.Interfaces.IUserService)">
+            <summary>
+             Constructor Users Controller
+            </summary>
+            <param name="logger">logger to log the details</param>
+            <param name="service"></param>
+        </member>
+        <member name="M:QuantifeedUserAPI.Controllers.UsersController.Users">
+            <summary>
+            API to get all the Users
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:QuantifeedUserAPI.Controllers.UsersController.User(QuantifeedUserAPI.Models.User)">
+            <summary>
+            API to Insert/Post New User in the System
+            </summary>
+            <param name="user"></param>
+            <returns></returns>
+        </member>
+        <member name="M:QuantifeedUserAPI.Controllers.UsersController.User(System.Int32,QuantifeedUserAPI.Models.User)">
+            <summary>
+            API to update User for the given ID
+            </summary>
+            <param name="id"></param>
+            <param name="user"></param>
+            <returns></returns>
+        </member>
+        <member name="M:QuantifeedUserAPI.Controllers.UsersController.User(System.Int32)">
+            <summary>
+            API to delete the User from the system
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:QuantifeedUserAPI.Interfaces.IUserService">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:QuantifeedUserAPI.Interfaces.IUserService.GetUsers">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:QuantifeedUserAPI.Interfaces.IUserService.AddUser(QuantifeedUserAPI.Models.User)">
+            <summary>
+            
+            </summary>
+            <param name="user"></param>
+            <returns></returns>
+        </member>
+        <member name="M:QuantifeedUserAPI.Interfaces.IUserService.UpdateUser(QuantifeedUserAPI.Models.User)">
+            <summary>
+            
+            </summary>
+            <param name="user"></param>
+            <returns></returns>
+        </member>
+        <member name="M:QuantifeedUserAPI.Interfaces.IUserService.DeleteUser(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:QuantifeedUserAPI.Models.User">
+            <summary>
+            User Model for the Quantifeed System
+            </summary>
+        </member>
+        <member name="P:QuantifeedUserAPI.Models.User.UserId">
+            <summary>
+            User Id
+            </summary>
+        </member>
+        <member name="P:QuantifeedUserAPI.Models.User.UserName">
+            <summary>
+            User Name
+            </summary>
+        </member>
+        <member name="P:QuantifeedUserAPI.Models.User.Email">
+            <summary>
+            Email
+            </summary>
+        </member>
+        <member name="P:QuantifeedUserAPI.Models.User.Alias">
+            <summary>
+            Alias
+            </summary>
+        </member>
+        <member name="P:QuantifeedUserAPI.Models.User.FirstName">
+            <summary>
+            First Name
+            </summary>
+        </member>
+        <member name="P:QuantifeedUserAPI.Models.User.LastName">
+            <summary>
+            Last Name
+            </summary>
+        </member>
+        <member name="T:QuantifeedUserAPI.Services.UserService">
+            <summary>
+            User Service
+            </summary>
+        </member>
+        <member name="M:QuantifeedUserAPI.Services.UserService.GetUsers">
+            <summary>
+            get users
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:QuantifeedUserAPI.Services.UserService.AddUser(QuantifeedUserAPI.Models.User)">
+            <summary>
+            Add Users
+            </summary>
+            <param name="user">User</param>
+            <returns></returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:QuantifeedUserAPI.Services.UserService.UpdateUser(QuantifeedUserAPI.Models.User)" -->
+        <member name="M:QuantifeedUserAPI.Services.UserService.DeleteUser(System.Int32)">
+            <summary>
+            Delete User
+            </summary>
+            <param name="id">id of the User to delete</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

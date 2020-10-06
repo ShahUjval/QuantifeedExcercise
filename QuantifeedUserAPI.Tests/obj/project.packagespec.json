@@ -1,0 +1,82 @@
+﻿{
+  "version": "1.0.0",
+  "restore": {
+    "projectUniqueName": "/Users/ujval.shah/RiderProjects/QuantifeedUserAPI/QuantifeedUserAPI.Tests/QuantifeedUserAPI.Tests.csproj",
+    "projectName": "QuantifeedUserAPI.Tests",
+    "projectPath": "/Users/ujval.shah/RiderProjects/QuantifeedUserAPI/QuantifeedUserAPI.Tests/QuantifeedUserAPI.Tests.csproj",
+    "outputPath": "/Users/ujval.shah/RiderProjects/QuantifeedUserAPI/QuantifeedUserAPI.Tests/obj/",
+    "projectStyle": "PackageReference",
+    "fallbackFolders": [
+      "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+    ],
+    "originalTargetFrameworks": [
+      "netcoreapp3.1"
+    ],
+    "sources": {
+      "https://api.nuget.org/v3/index.json": {}
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "projectReferences": {
+          "/Users/ujval.shah/RiderProjects/QuantifeedUserAPI/QuantifeedUserAPI/QuantifeedUserAPI.csproj": {
+            "projectPath": "/Users/ujval.shah/RiderProjects/QuantifeedUserAPI/QuantifeedUserAPI/QuantifeedUserAPI.csproj"
+          }
+        }
+      }
+    },
+    "warningProperties": {
+      "warnAsError": [
+        "NU1605"
+      ]
+    }
+  },
+  "frameworks": {
+    "netcoreapp3.1": {
+      "dependencies": {
+        "MSTest.TestAdapter": {
+          "target": "Package",
+          "version": "[2.1.0, )"
+        },
+        "MSTest.TestFramework": {
+          "target": "Package",
+          "version": "[2.1.0, )"
+        },
+        "Microsoft.NET.Test.Sdk": {
+          "target": "Package",
+          "version": "[16.5.0, )"
+        },
+        "Moq": {
+          "target": "Package",
+          "version": "[4.14.6, )"
+        },
+        "Moq.EntityFramework": {
+          "target": "Package",
+          "version": "[1.0.10, )"
+        },
+        "coverlet.collector": {
+          "target": "Package",
+          "version": "[1.2.0, )"
+        }
+      },
+      "imports": [
+        "net461",
+        "net462",
+        "net47",
+        "net471",
+        "net472",
+        "net48"
+      ],
+      "assetTargetFallback": true,
+      "warn": true,
+      "frameworkReferences": {
+        "Microsoft.AspNetCore.App": {
+          "privateAssets": "none"
+        },
+        "Microsoft.NETCore.App": {
+          "privateAssets": "all"
+        }
+      },
+      "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.301/RuntimeIdentifierGraph.json"
+    }
+  }
+}
